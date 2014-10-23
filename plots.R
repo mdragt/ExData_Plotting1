@@ -2,7 +2,7 @@
 require(ggplot2)
 
 ## set work dir
-setwd("***")
+setwd("C:/Users/mdragt/SkyDrive/Coursera/Exploring Data/")
 
 ## -----------------------------------------------------------------------------
 ## get data
@@ -102,7 +102,7 @@ plot4 <- function() {
     legend("topright", c(colnames(df_all)[7:9]), col=c("black","red","blue"),
            bty="n", lty=1, cex=.75)
     # Global reactive power
-    plot(df_all$datetime,  df_all$Voltage, 
+    plot(df_all$datetime,  df_all$Global_reactive_power, 
          ylab="Global_reactive_power", 
          type="l", 
          lwd=1, 
